@@ -87,5 +87,9 @@ def find_pet_by_name(pet_shop, pet_name)
        pet_returned = pets
     end
   end
-  return pet_returned
+  if pet_returned != {}
+    return pet_returned
+  else
+    return nil
+  end
 end
